@@ -119,7 +119,7 @@ class OrderFunctionalityTests : BaseTest() {
         // Launch the main activity
         launchActivity<MainActivity>()
         // Start order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Select entree item
         onView(withId(R.id.cauliflower)).perform(click())
         // We already have a test for a single menu item selection, so we don't need to check the
@@ -172,13 +172,13 @@ class OrderFunctionalityTests : BaseTest() {
         // Launch the app
         launchActivity<MainActivity>()
         // Start the order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Select an item
         onView(withId(R.id.cauliflower)).perform(click())
         // Cancel order
         onView(withId(R.id.cancel_button)).perform(click())
         // Start the order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Make sure subtotal is zero
         onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
     }
@@ -191,7 +191,7 @@ class OrderFunctionalityTests : BaseTest() {
         // Launch the app
         launchActivity<MainActivity>()
         // Start the order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Select an item
         onView(withId(R.id.cauliflower)).perform(click())
         // Move to side menu
@@ -201,7 +201,7 @@ class OrderFunctionalityTests : BaseTest() {
         // Cancel the order
         onView(withId(R.id.cancel_button)).perform(click())
         // Start the order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Make sure subtotal is zero
         onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
     }
@@ -214,7 +214,7 @@ class OrderFunctionalityTests : BaseTest() {
         // Launch the app
         launchActivity<MainActivity>()
         // Start the order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Select an item
         onView(withId(R.id.cauliflower)).perform(click())
         // Move to side menu
@@ -228,7 +228,7 @@ class OrderFunctionalityTests : BaseTest() {
         // Cancel the order
         onView(withId(R.id.cancel_button)).perform(click())
         // Start the order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Make sure subtotal is zero
         onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
     }
@@ -243,7 +243,7 @@ class OrderFunctionalityTests : BaseTest() {
         // Cancel the order
         onView(withId(R.id.cancel_button)).perform(click())
         // Start the order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Make sure subtotal is zero
         onView(withText("Subtotal: $0.00")).check(matches(isDisplayed()))
     }

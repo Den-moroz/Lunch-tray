@@ -11,7 +11,7 @@ open class BaseTest {
         // Launch the main activity
         launchActivity<MainActivity>()
         // Start order
-        onView(withId(R.id.start_order_btn)).perform(click())
+        onView(withId(R.id.start_order)).perform(click())
         // Select entree item
         onView(withId(R.id.cauliflower)).perform(click())
         // Move to next fragment
